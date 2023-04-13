@@ -1,0 +1,33 @@
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#search {
+    border: none;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    margin: 25px 0px;
+    font-size: 24px;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    padding-right: 50px;
+}
+
+#search:focus {
+  outline: 3px solid #EACFFC;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}

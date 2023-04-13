@@ -1,0 +1,109 @@
+#dictionary {
+  margin: 5px 15px;
+}
+
+#dictionary #meanings {
+  margin-bottom: 20px;
+}
+
+#dictionary ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+#dictionary li {
+  margin-bottom: 15px;
+}
+
+#dictionary::marker {
+  color: #A343ED;
+  margin-right: 15px;
+}
+
+.first {
+  display: flex;
+}
+
+.word-and-trans {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.word {
+  font-size: 45px;
+  margin-bottom: 15px;
+  margin: 0;
+}
+
+.transcription {
+  font-size: 25px;
+  color: #A343ED;
+  margin-top: 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-image: url("/src/images/icon-play.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+
+.synonym, .source {
+  margin-right: 20px;
+}
+
+.synonyms {
+  color: #A343ED;
+  font-weight: bold;
+}
+
+.partOfSpeech {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.line {
+  position: relative;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50px;
+  width: calc(100% - 50px);
+  height: 0.1px;
+  background-color: #A8A1AF;
+}
+
+.lineBottom {
+  position: relative;
+  margin: 50px 0px;
+}
+
+.lineBottom::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 0.1px;
+  background-color: #A8A1AF;
+}
+
+.sourceLink, .sourceLink:visited {
+  color: inherit;
+}
